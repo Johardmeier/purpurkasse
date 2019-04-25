@@ -1,0 +1,97 @@
+Performances:
+	{
+		"id": 1,
+		"title": "Bruno aus Bovolino",
+		"date": "2018-02-06 01:30",
+		"prices": {
+			"adults": 23,
+			"children": 13
+		},
+		"discounts": {
+			"adults": [
+				{
+					"name": "Mitglieder",
+					"price": 20
+				},
+				{
+					"name": "Heinzelmännchen",
+					"price": 0
+				},
+				{
+					"name": "AHV",
+					"price": 15
+				},
+				{
+					"name": "Steuerkarte",
+					"price": 15
+				}
+			],
+			"children": [
+				{
+					"name": "Mitglieder",
+					"price": 11
+				},
+				{
+					"name": "Heinzelmännchen",
+					"price": 0
+				},
+				{
+					"name": "Steuerkarte",
+					"price": 8
+				},
+				{
+					"name": "Kurskind",
+					"price": 0
+				}
+			]
+		}
+	}	
+
+Bookings (for a particular performace):
+	{
+		"id": 2,
+		"name": "Brenzikofer",
+		"forename": "Sara",
+		"booking": {
+			"date": "2018-02-25 20:57",
+			"means": "tel",
+			"agent": "Samira",
+			"contact": "078 07 32 37"
+		},
+		"last_contact": {
+			"date": "2018-02-25 20:57",
+			"means": "tel",
+			"agent": "Samira",
+			"contact": "078 07 32 37"
+		}
+		"remarks": ""
+		"tickets": [
+			{
+				"class": "adult/child/undefined",
+				"tarif": "normal/heinzelmännchen/....",
+				"price": "31.00",
+				"status": "booked/paid/collected/cancelled" => cancelled only used for journal -> cancelled tickets are deleted from the stack				
+			},
+		]
+	}
+
+Journal :
+	{
+		"booking_id": 2,
+		"performance": 15,
+		"contact": {
+			"date": "2018-02-25 20:57",
+			"means": "tel",
+			"agent": "Samira",
+			"contact": "078 07 32 37"
+		},
+		"remarks": ""
+		"tickets": [
+			{
+				"class": "adult/child/undefined",
+				"tarif": "normal/heinzelmännchen/....",
+				"price": "31.00",
+				"status": "booked/paid/collected/cancelled" => cancelled only used for journal -> cancelled tickets are deleted from the stack				
+			},
+		]
+	}
