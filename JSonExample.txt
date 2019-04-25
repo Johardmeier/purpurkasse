@@ -1,0 +1,87 @@
+Client ID: 1
+Client Secret: SNQuE11GlffGWYYyIDjaqGA8LWBaAcpzNbIWJUFC
+Password grant client created successfully.
+Client ID: 2
+Client Secret: cAW50OCwArM94FI8QP8nTu6dmcIEemRCY4pj6DeR
+
+{
+Play: {
+	name: 'Bruno aus Bovolino', 
+	date:'2018-12-12',
+	prices: {
+		adults: 23.00,
+		children: 13.00
+		},
+	discounts: {
+		adults: [
+			{name: 'Mitglied', price: 21.00},
+			{name: 'Heinzelmännchen', price: 0.00},
+			{name: 'AHV', price: 15.00},
+			{name: 'Steuerkarte', price: 15.00}
+		],
+		children: [
+			{name: 'Mitglied', price: 11.00},
+			{name: 'Heinzelmännchen', price: 0.00},
+			{name: 'Steuerkarte', price: 11.00}
+		],
+		groups: [
+			{
+				name: 'Hort',
+				description: 'Eintritt 9.-, Pro 6 Kinder eine Begleitperson gratis.',
+				adults: '(adults-min(adults,children\6+1)*9.00)',
+				children: 'children*9.00'
+			},			
+			{
+				name: 'Kurskinder',
+				description: 'Erwachsene 15.-, Kinder gratis',
+				adults: '(adults*15.00',
+				children: '0.0'
+			}
+		]
+	},
+	bookings: [
+		{
+			id: 1, 
+			name: 'von der Lenzerheide', 
+			prename: 'Rahel Maria', 
+			booked: {
+				adults: 5, 
+				children: 3, 
+				date: '2018-6-12T04:55:44', 
+				means: 'tel', 
+				contact: '076 364 58 50', 
+				remarks:''
+			}, 
+			collected: {
+				adults: [
+					{ 
+						count:0,
+						price:0,
+						tarif:''
+					}
+				],
+				children: [
+					{
+						count:0,
+						price:0,
+						tarif:''
+					}
+				],
+				remarks:''
+			},
+			open: {
+				adults: {
+					count:0,
+					details: [
+						{
+						}
+					]
+				},
+				children: {
+					count:0
+				},
+				remarks: ''
+			}
+        }
+	]
+}
